@@ -9,7 +9,7 @@ describe('Planet', () => {
   });
 
   test('should correctly create a Planet object with specified properties', () => {
-    expect(planet.name).toEqual("Mercury");
+    expect(planet.planetName).toEqual("Mercury");
     expect(planet.earthUserAge).toEqual(36);
   });
   
