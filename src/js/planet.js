@@ -10,6 +10,7 @@ export default class Planet {
     const mercuryYears = .24;
     const venusYears = .62;
     const marsYears = 1.88;
+    const jupiterYears = 11.86;
     if (this.planetName === "Mercury") {
       return Math.round((365 * mercuryYears));
     } else if (this.planetName === "Venus") {
@@ -17,7 +18,7 @@ export default class Planet {
     } else if (this.planetName === "Mars") {
       return Math.round((365 * marsYears));
     } else if (this.planetName === "Jupiter") {
-      
+      return Math.round((365 * jupiterYears));
     } else {
       return false;
     }
