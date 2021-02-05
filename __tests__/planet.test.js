@@ -4,10 +4,12 @@ describe('Planet', () => {
 
   let mercury;
   let jupiter;
+  let venus;
 
   beforeEach(() => {
     mercury = new Planet("Mercury", 36);
     jupiter = new Planet("Jupiter", 36);
+    venus = new Planet("Venus", 36);
   });
 
   test('should correctly create a Planet object with specified properties', () => {
@@ -20,7 +22,10 @@ describe('Planet', () => {
     expect(jupiter.calculatePlanetEarthYears()).toEqual(false);
   });
 
-
+  test('should correctly calculate earth years for venus object', () => {
+    expect(venus.calculatePlanetEarthYears()).toEqual(226);
+    expect(jupiter.calculatePlanetEarthYears()).toEqual(false);
+  });
 
 
   
