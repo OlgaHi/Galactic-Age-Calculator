@@ -2,5 +2,8 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-//import Blank from './js/blank.js';
+import Planet from './js/planet.js';
 
+// let mercury = new Planet("Mercury", 36);
+// mercury.calculatePlanetEarthYears();
+// console.log(mercury.planetEarthYears)

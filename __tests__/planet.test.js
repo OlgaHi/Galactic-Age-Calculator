@@ -2,15 +2,23 @@ import Planet from '../src/js/planet.js';
 
 describe('Planet', () => {
 
-  let planet;
+  let mercury;
 
   beforeEach(() => {
-    planet = new Planet("Mercury", 36);
+    mercury = new Planet("Mercury", 36);
   });
 
   test('should correctly create a Planet object with specified properties', () => {
-    expect(planet.planetName).toEqual("Mercury");
-    expect(planet.earthUserAge).toEqual(36);
+    expect(mercury.planetName).toEqual("Mercury");
+    expect(mercury.earthUserAge).toEqual(36);
   });
+
+  test('should correctly calculate earth years for mercury object', () => {
+    expect(mercury.calculatePlanetEarthYears()).toEqual(88);
+  });
+
+
+
+
   
 });
