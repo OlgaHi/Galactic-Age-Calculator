@@ -1,9 +1,8 @@
 {
-  "name": "Template",
+  "name": "galactic-age-calculator",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "buildSlim": "webpack --mode production",
     "build": "webpack --mode development",
     "start": "npm run build & webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
@@ -11,12 +10,15 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": ["html","text"]
+    "coverageReporters": [
+      "html",
+      "text"
+    ]
   },
   "keywords": [],
   "author": "Olha Hizhytska",
   "license": "MIT",
-  "description": "Template Enviroment",
+  "description": "* _List all_\r * _the major technologies_\r * _you used in your project_\r * _here_",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
@@ -35,5 +37,13 @@
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlgaHi/Galactic-Age-Calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OlgaHi/Galactic-Age-Calculator/issues"
+  },
+  "homepage": "https://github.com/OlgaHi/Galactic-Age-Calculator#readme"
 }
