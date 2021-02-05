@@ -16,7 +16,7 @@ describe('Planet', () => {
     expect(mercury.earthUserAge).toEqual(36);
   });
 
-  test('should update property planetEarthYears for mercury object', () => {
+  test('should calculate and update property planetEarthYears for mercury object', () => {
     mercury.calculatePlanetEarthYears();
     expect(mercury.planetEarthYears).toEqual(88);
   });

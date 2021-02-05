@@ -7,7 +7,8 @@ export default class Planet {
   }
   
   calculatePlanetEarthYears() {
-    
+    const mercuryYears = .24;
+    this.planetEarthYears = Math.round((365 * mercuryYears));
     
   }
 }
