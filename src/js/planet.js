@@ -13,6 +13,8 @@ export default class Planet {
       return Math.round((365 * mercuryYears));
     } else if (this.planetName === "Venus") {
       return Math.round((365 * venusYears));
+    } else if (this.planetName === "Mars") {
+      
     } else {
       return false;
     }
