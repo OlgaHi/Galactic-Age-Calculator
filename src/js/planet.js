@@ -7,20 +7,7 @@ export default class Planet {
   }
   
   calculatePlanetEarthYears() {
-    const mercuryYears = .24;
-    const venusYears = .62;
-    const marsYears = 1.88;
-    const jupiterYears = 11.86;
-    if (this.planetName === "Mercury") {
-      this.planetEarthYears = Math.round((365 * mercuryYears));
-    } else if (this.planetName === "Venus") {
-      return Math.round((365 * venusYears));
-    } else if (this.planetName === "Mars") {
-      return Math.round((365 * marsYears));
-    } else if (this.planetName === "Jupiter") {
-      return Math.round((365 * jupiterYears));
-    } else {
-      return false;
-    }
+    
+    
   }
 }
