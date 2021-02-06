@@ -46,6 +46,15 @@ describe('Planet', () => {
     expect(mercury.userPlanetAge).toEqual(149);
   });
 
+  test('should calculate and update property userPlanetAge for venus object', () => {
+    venus.calculatePlanetEarthYears();
+    venus.calculateuserPlanetAge();
+    expect(venus.userPlanetAge).toEqual(58);
+  });
+
+  
+
+
 
 
 
