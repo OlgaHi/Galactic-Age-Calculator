@@ -24,6 +24,6 @@ export default class Planet {
   }
 
   calculateuserPlanetAge() {
-    
+    this.userPlanetAge = Math.round((365 * this.earthUserAge)/this.planetEarthYears);
   }
 }
