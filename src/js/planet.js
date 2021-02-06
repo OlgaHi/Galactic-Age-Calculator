@@ -4,6 +4,7 @@ export default class Planet {
     this.earthUserAge = earthUserAge;
     this.planetEarthYears = 0;
     this.userPlanetAge = 0;
+    this.userLifeExpectancy = 0;
   }
   
   calculatePlanetEarthYears() {
@@ -23,7 +24,12 @@ export default class Planet {
     }
   }
 
-  calculateuserPlanetAge() {
+  calculateUserPlanetAge() {
     this.userPlanetAge = Math.round((365 * this.earthUserAge)/this.planetEarthYears);
   }
+
+  calculateUserLifeExpectancy() {
+    
+  }
+
 }

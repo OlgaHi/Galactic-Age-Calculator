@@ -42,26 +42,32 @@ describe('Planet', () => {
 
   test('should calculate and update property userPlanetAge for mercury object', () => {
     mercury.calculatePlanetEarthYears();
-    mercury.calculateuserPlanetAge();
+    mercury.calculateUserPlanetAge();
     expect(mercury.userPlanetAge).toEqual(149);
   });
 
   test('should calculate and update property userPlanetAge for venus object', () => {
     venus.calculatePlanetEarthYears();
-    venus.calculateuserPlanetAge();
+    venus.calculateUserPlanetAge();
     expect(venus.userPlanetAge).toEqual(58);
   });
 
   test('should calculate and update property userPlanetAge for mars object', () => {
     mars.calculatePlanetEarthYears();
-    mars.calculateuserPlanetAge();
+    mars.calculateUserPlanetAge();
     expect(mars.userPlanetAge).toEqual(19);
   });
 
   test('should calculate and update property userPlanetAge for jupiter object', () => {
     jupiter.calculatePlanetEarthYears();
-    jupiter.calculateuserPlanetAge();
+    jupiter.calculateUserPlanetAge();
     expect(jupiter.userPlanetAge).toEqual(3);
+  });
+
+  test('method should calculate and update property userLifeExpectancy for objects', () => {
+    mercury.calculateUserLifeExpectancy();
+    expect(mercury.userLifeExpectancy).toEqual(80);
+    
   });
 
 
