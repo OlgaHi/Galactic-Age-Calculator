@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Planet from './js/planet.js';
 
-// let mercury = new Planet("Mercury", 36);
-// mercury.calculatePlanetEarthYears();
-// console.log(mercury.planetEarthYears)
+let venus = new Planet("Mercury", 36);
+venus.calculatePlanetEarthYears();
+venus.calculateuserPlanetAge()
+console.log(venus.userPlanetAge)
