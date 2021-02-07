@@ -137,6 +137,16 @@ describe('Planet', () => {
     expect(mars.leftOrSurpassed).toEqual(25);
   });
 
+  test('should determine and update property leftOrSurpassed for jupiter object', () => {
+    jupiter.calculatePlanetEarthYears();
+    jupiter.calculateUserPlanetAge();
+    jupiter.determineUserLifeExpectancy();
+    jupiter.calculateUserPlanetLifeExpectancy();
+    jupiter.calculateLeftOrSurp();
+    expect(jupiter.leftOrSurpassed).toEqual(4);
+  });
+
+
 
 
 
