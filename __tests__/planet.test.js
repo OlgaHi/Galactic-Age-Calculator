@@ -146,6 +146,16 @@ describe('Planet', () => {
     expect(jupiter.leftOrSurpassed).toEqual(4);
   });
 
+  test('should determine and return if it is left or surpassed for mercury object', () => {
+    mercury.calculatePlanetEarthYears();
+    mercury.calculateUserPlanetAge();
+    mercury.determineUserLifeExpectancy();
+    mercury.calculateUserPlanetLifeExpectancy();
+    mercury.calculateLeftOrSurp();
+    expect(mercury.determineLeftOrSurpass()).toEqual("Your age in Mercury is 149 years. The average life expectancy in Mercury is 328 years. It looks like you still have at least 179 years left to live! Hooray!");
+  });
+ 
+ 
 
 
 

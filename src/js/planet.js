@@ -47,6 +47,10 @@ export default class Planet {
   calculateLeftOrSurp() {
     this.leftOrSurpassed = this.userPlanetLifeExpectancy - this.userPlanetAge;
   }
+
+  determineLeftOrSurpass() {
+    
+  }
   
   
 }
