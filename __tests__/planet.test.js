@@ -119,6 +119,15 @@ describe('Planet', () => {
     expect(mercury.leftOrSurpassed).toEqual(179);
   });
 
+  test('should determine and update property leftOrSurpassed for venus object', () => {
+    venus.calculatePlanetEarthYears();
+    venus.calculateUserPlanetAge();
+    venus.determineUserLifeExpectancy();
+    venus.calculateUserPlanetLifeExpectancy();
+    venus.calculateLeftOrSurp();
+    expect(venus.leftOrSurpassed).toEqual(71);
+  });
+
 
 
 
