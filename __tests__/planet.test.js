@@ -10,7 +10,7 @@ describe('Planet', () => {
   beforeEach(() => {
     mercury = new Planet("Mercury", 36, "never");
     venus = new Planet("Venus", 36, "sometimes");
-    mars = new Planet("Mars", 36);
+    mars = new Planet("Mars", 36, "regulary");
     jupiter = new Planet("Jupiter", 36);
     
   });
@@ -75,6 +75,13 @@ describe('Planet', () => {
     expect(venus.userLifeExpectancy).toEqual(80);
     
   });
+
+  test('should determine and update property userLifeExpectancy for mars object', () => {
+    mars.determineUserLifeExpectancy();
+    expect(mars.userLifeExpectancy).toEqual(80);
+    
+  });
+
 
 
 
