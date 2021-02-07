@@ -182,15 +182,12 @@ describe('Planet', () => {
     expect(mars.determineLeftOrSurpass()).toEqual("Your age in Mars is 19 years. The average life expectancy in Mars is 44 years. It looks like you still have at least 25 years left to live! Hooray!");
   });
 
- 
- 
-
-
-
-
-
-
-
-
-  
+  test('should determine and return if it is left or surpassed for jupiter object', () => {
+    jupiter.calculatePlanetEarthYears();
+    jupiter.calculateUserPlanetAge();
+    jupiter.determineUserLifeExpectancy();
+    jupiter.calculateUserPlanetLifeExpectancy();
+    jupiter.calculateLeftOrSurp();
+    expect(jupiter.determineLeftOrSurpass()).toEqual("Your age in Jupiter is 3 years. The average life expectancy in Jupiter is 7 years. It looks like you still have at least 4 years left to live! Hooray!");
+  });
 });
