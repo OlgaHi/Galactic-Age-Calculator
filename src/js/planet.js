@@ -40,7 +40,7 @@ export default class Planet {
   }
 
   calculateUserPlanetLifeExpectancy() {
-    
+    this.userPlanetLifeExpectancy = Math.round((365 * this.userLifeExpectancy)/this.planetEarthYears);
   }
   
   
