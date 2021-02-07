@@ -96,6 +96,14 @@ describe('Planet', () => {
     expect(venus.userPlanetLifeExpectancy).toEqual(129);
   });
 
+  test('should calculate and update property userPlanetLifeExpectancy for jupiter object', () => {
+    jupiter.calculatePlanetEarthYears();
+    jupiter.determineUserLifeExpectancy();
+    jupiter.calculateUserPlanetLifeExpectancy();
+    expect(jupiter.userPlanetLifeExpectancy).toEqual(7);
+  });
+
+
 
 
 
