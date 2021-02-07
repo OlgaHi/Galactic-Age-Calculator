@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import Planet from '../src/js/planet.js';
 
 describe('Planet', () => {
@@ -16,6 +17,7 @@ describe('Planet', () => {
   test('should correctly create a Planet object with specified properties', () => {
     expect(mercury.planetName).toEqual("Mercury");
     expect(mercury.earthUserAge).toEqual(36);
+    expect(mercury.activityLevel).toEqual("never");
   });
 
   test('should calculate planetEarthYears for mercury object', () => {
@@ -128,14 +130,6 @@ describe('Planet', () => {
     jupiter.calculateUserPlanetLifeExpectancy();
     jupiter.calculateLeftOrSurp();
     expect(jupiter.leftOrSurpassed).toEqual(4);
-  });
-
-  test('should determine and return if it is left or surpassed for mercury object', () => {
-    mercury.calculateUserPlanetAge();
-    mercury.determineUserLifeExpectancy();
-    mercury.calculateUserPlanetLifeExpectancy();
-    mercury.calculateLeftOrSurp();
-    expect(mercury.determineLeftOrSurpass()).toEqual("Your age in Mercury is 149 years. The average life expectancy in Mercury is 328 years. It looks like you still have at least 179 years left to live! Hooray!");
   });
 
   test('should determine and return if it is left or surpassed for mercury object', () => {
