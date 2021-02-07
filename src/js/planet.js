@@ -6,6 +6,7 @@ export default class Planet {
     this.userPlanetAge = 0;
     this.activityLevel = activityLevel;
     this.userLifeExpectancy = 0;
+    this.leftOrSurpassed = 0
   }
   
   calculatePlanetEarthYears() {
@@ -41,6 +42,10 @@ export default class Planet {
 
   calculateUserPlanetLifeExpectancy() {
     this.userPlanetLifeExpectancy = Math.round((365 * this.userLifeExpectancy)/this.planetEarthYears);
+  }
+  
+  calculateLeftOrSurp() {
+    
   }
   
   
