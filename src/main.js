@@ -4,17 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Planet from './js/planet.js';
 
-let venus = new Planet("Venus", 82, "sometimes");
-venus.calculatePlanetEarthYears();
-venus.calculateUserPlanetAge();
+let mars = new Planet("Mars", 36, "regulary");
+mars.calculatePlanetEarthYears();
+mars.calculateUserPlanetAge();
 
-venus.determineUserLifeExpectancy();
-venus.calculateUserPlanetLifeExpectancy();
-venus.calculateLeftOrSurp();
-let response = venus.determineLeftOrSurpass();
+mars.determineUserLifeExpectancy();
+mars.calculateUserPlanetLifeExpectancy();
+mars.calculateLeftOrSurp();
+let response = mars.determineLeftOrSurpass();
 console.log(response);
-console.log(venus.userPlanetAge);
-console.log(venus.userLifeExpectancy);
-console.log(venus.userPlanetLifeExpectancy);
-console.log(venus.leftOrSurpassed);
+console.log(mars.userPlanetAge);
+console.log(mars.userLifeExpectancy);
+console.log(mars.userPlanetLifeExpectancy);
+console.log(mars.leftOrSurpassed);
 

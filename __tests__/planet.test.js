@@ -172,6 +172,16 @@ describe('Planet', () => {
     venus.calculateLeftOrSurp();
     expect(venus.determineLeftOrSurpass()).toEqual("Your age in Venus is 132 years. You are already surpassed the average life expectancy in Venus, which is 129 years, for about up to 3 years. Congrats!");
   });
+
+  test('should determine and return if it is left or surpassed for mars object', () => {
+    mars.calculatePlanetEarthYears();
+    mars.calculateUserPlanetAge();
+    mars.determineUserLifeExpectancy();
+    mars.calculateUserPlanetLifeExpectancy();
+    mars.calculateLeftOrSurp();
+    expect(mars.determineLeftOrSurpass()).toEqual("Your age in Mars is 19 years. The average life expectancy in Mars is 44 years. It looks like you still have at least 25 years left to live! Hooray!");
+  });
+
  
  
 
