@@ -8,7 +8,7 @@ describe('Planet', () => {
   
   beforeEach(() => {
     mercury = new Planet("Mercury", 36, "never");
-    venus = new Planet("Venus", 36, "sometimes");
+    venus = new Planet("Venus", 82, "sometimes");
     mars = new Planet("Mars", 36, "regulary");
     jupiter = new Planet("Jupiter", 36);
   });
@@ -47,7 +47,7 @@ describe('Planet', () => {
   test('should calculate and update property userPlanetAge for venus object', () => {
     venus.calculatePlanetEarthYears();
     venus.calculateUserPlanetAge();
-    expect(venus.userPlanetAge).toEqual(58);
+    expect(venus.userPlanetAge).toEqual(132);
   });
 
   test('should calculate and update property userPlanetAge for mars object', () => {
@@ -125,7 +125,7 @@ describe('Planet', () => {
     venus.determineUserLifeExpectancy();
     venus.calculateUserPlanetLifeExpectancy();
     venus.calculateLeftOrSurp();
-    expect(venus.leftOrSurpassed).toEqual(71);
+    expect(venus.leftOrSurpassed).toEqual(-3);
   });
 
   test('should determine and update property leftOrSurpassed for mars object', () => {
@@ -153,6 +153,24 @@ describe('Planet', () => {
     mercury.calculateUserPlanetLifeExpectancy();
     mercury.calculateLeftOrSurp();
     expect(mercury.determineLeftOrSurpass()).toEqual("Your age in Mercury is 149 years. The average life expectancy in Mercury is 328 years. It looks like you still have at least 179 years left to live! Hooray!");
+  });
+
+  test('should determine and return if it is left or surpassed for mercury object', () => {
+    mercury.calculatePlanetEarthYears();
+    mercury.calculateUserPlanetAge();
+    mercury.determineUserLifeExpectancy();
+    mercury.calculateUserPlanetLifeExpectancy();
+    mercury.calculateLeftOrSurp();
+    expect(mercury.determineLeftOrSurpass()).toEqual("Your age in Mercury is 149 years. The average life expectancy in Mercury is 328 years. It looks like you still have at least 179 years left to live! Hooray!");
+  });
+ 
+  test('should determine and return if it is left or surpassed for venus object', () => {
+    venus.calculatePlanetEarthYears();
+    venus.calculateUserPlanetAge();
+    venus.determineUserLifeExpectancy();
+    venus.calculateUserPlanetLifeExpectancy();
+    venus.calculateLeftOrSurp();
+    expect(venus.determineLeftOrSurpass()).toEqual("Your age in Venus is 132 years. You are already surpassed the average life expectancy in Venus, which is 129 years, for about up to 3 years. Congrats!");
   });
  
  
