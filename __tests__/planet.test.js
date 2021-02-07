@@ -128,6 +128,16 @@ describe('Planet', () => {
     expect(venus.leftOrSurpassed).toEqual(71);
   });
 
+  test('should determine and update property leftOrSurpassed for mars object', () => {
+    mars.calculatePlanetEarthYears();
+    mars.calculateUserPlanetAge();
+    mars.determineUserLifeExpectancy();
+    mars.calculateUserPlanetLifeExpectancy();
+    mars.calculateLeftOrSurp();
+    expect(mars.leftOrSurpassed).toEqual(25);
+  });
+
+
 
 
 
