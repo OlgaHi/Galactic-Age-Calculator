@@ -49,7 +49,9 @@ export default class Planet {
   }
 
   determineLeftOrSurpass() {
-    
+    if (!/[-]/.test(this.leftOrSurpassed)) {
+      return (`Your age in ${this.planetName} is ${this.userPlanetAge} years. The average life expectancy in ${this.planetName} is ${this.userPlanetLifeExpectancy} years. It looks like you still have at least ${this.leftOrSurpassed} years left to live! Hooray!`);
+    }
   }
   
   
