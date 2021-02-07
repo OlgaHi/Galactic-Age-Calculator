@@ -1,7 +1,6 @@
 import Planet from '../src/js/planet.js';
 
 describe('Planet', () => {
-
   let mercury;
   let venus;
   let mars;
@@ -12,7 +11,6 @@ describe('Planet', () => {
     venus = new Planet("Venus", 36, "sometimes");
     mars = new Planet("Mars", 36, "regulary");
     jupiter = new Planet("Jupiter", 36);
-    
   });
 
   test('should correctly create a Planet object with specified properties', () => {
@@ -67,20 +65,24 @@ describe('Planet', () => {
   test('should determine and update property userLifeExpectancy for mercury object', () => {
     mercury.determineUserLifeExpectancy();
     expect(mercury.userLifeExpectancy).toEqual(79);
-    
   });
 
   test('should determine and update property userLifeExpectancy for venus object', () => {
     venus.determineUserLifeExpectancy();
     expect(venus.userLifeExpectancy).toEqual(80);
-    
   });
 
   test('should determine and update property userLifeExpectancy for mars object', () => {
     mars.determineUserLifeExpectancy();
     expect(mars.userLifeExpectancy).toEqual(82);
-    
   });
+
+  test('should determine and update property userLifeExpectancy for jupiter object', () => {
+    jupiter.determineUserLifeExpectancy();
+    expect(jupiter.userLifeExpectancy).toEqual(82);
+  });
+
+  
 
 
 

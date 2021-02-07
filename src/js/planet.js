@@ -38,6 +38,10 @@ export default class Planet {
       this.userLifeExpectancy = 82;
     }
   }
+
+  calculateUserPlanetLifeExpectancy() {
+    
+  }
   
   
 }
