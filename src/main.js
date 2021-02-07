@@ -4,17 +4,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Planet from './js/planet.js';
 
-let jupiter = new Planet("Jupiter", 36);
-jupiter.calculatePlanetEarthYears();
-jupiter.calculateUserPlanetAge();
+let mars = new Planet("Mars", 36, "regulary");
+//mercury.calculatePlanetEarthYears();
+mars.calculateUserPlanetAge();
 
-jupiter.determineUserLifeExpectancy();
-jupiter.calculateUserPlanetLifeExpectancy();
-jupiter.calculateLeftOrSurp();
-let response = jupiter.determineLeftOrSurpass();
+mars.determineUserLifeExpectancy();
+mars.calculateUserPlanetLifeExpectancy();
+mars.calculateLeftOrSurp();
+let response = mars.determineLeftOrSurpass();
 console.log(response);
-console.log(jupiter.userPlanetAge);
-console.log(jupiter.userLifeExpectancy);
-console.log(jupiter.userPlanetLifeExpectancy);
-console.log(jupiter.leftOrSurpassed);
+console.log(mars.userPlanetAge);
+console.log(mars.userLifeExpectancy);
+console.log(mars.userPlanetLifeExpectancy);
+console.log(mars.leftOrSurpassed);
+
+
 

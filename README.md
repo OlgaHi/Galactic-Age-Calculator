@@ -1,50 +1,69 @@
-# (Blank Template)
+# **Galactic Age Calculator**
+By Olha Hizhytska
 
-#### (Brief Description of Application)
+Using this application user can know his age in 4 diferent planets: Mercury, Venus, Mars and Jupiter. Also the user can find out how much he has left to live on selected planet, according to the average life expectance in such planet.
 
-#### By (Your Name Here)
 
-## Technologies Used
+## Technologies Used:
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* JavaScript
+* HTML/CSS/Bootstrap
+* jQuery
+* Node
+* Npm
+* Webpack
+* Jest
+
 
 ## Description
 
-## Setup/Installation Requirements
+This application demonstrates:
+-  practicing OOP, using classes. 
+- creating modern development environments, using module bundling with Webpack, dependencies are managed using npm.
+- using Test-driven development with Jest.
+- 100% automated test coverage.
+![Homepage](src/images/screenshottdd.png)
+ 
 
-### Without Github template clone:
-* Clone Repo
-* Delete .git if needing a clean commit history
-* Initilize git
-* Add remote repository to new git
-* Make first commit only adding .gitignore to commit
-* Open new repo to begin npm initilization
+ 
+## Setup
 
-### With Github
-* Press use this template
-* Create new repo
-* Clone new repo down to
-* Open new repo to begin npm initilization
+- Clone this repository to your desktop, using next command:
 
-### Npm Initilization
-* Verify package.json has correct npm packages for needs
-* Modify title on line 18 of webpack.config.js
-* Modify title on line 2 of package.json
-* Modify description on line 19 of package.json
-* Modify title on line 2 if package-lock.json
-* Run ```npm init -y```
-* Run ```npm install```
-* Verify install works by running ```npm run test``` and ```npm run build```
+  git clone https://github.com/OlgaHi/Galactic-Age-Calculator.git
 
-* * *
+- Navigate to the top level of the directory.
+
+  cd Galactic-Age-Calculator
+
+- Open in text editor to view code:
+  -  Run the command `npm run install`
+
+## Specifications
+
+<details>
+  <summary>Expand Specs</summary>
+
+### Describe: Planet()
+
+| Test | Expect |
+| ---- | ------ |
+| Should correctly create a Mercury object with specified properties | (mercury.planetName).toEqual("Mercury");(mercury.earthUserAge).toEqual(36) |
+| Should calculate and update property planetEarthYears for mercury object | (mercury.planetEarthYears).toEqual(88); |
+
+
+</details>
+
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+- No known issues
 
 ## License
 
+[MIT](https://en.wikipedia.org/wiki/MIT_License)
+Copyright (c) 2021 Olha Hizhytska
+
 ## Contact Information
+
+- Olha Hizhytska olgainfotech@gmail.com
+

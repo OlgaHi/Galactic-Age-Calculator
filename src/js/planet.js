@@ -2,11 +2,10 @@ export default class Planet {
   constructor(planetName, earthUserAge, activityLevel) {
     this.planetName = planetName;
     this.earthUserAge = earthUserAge;
-    this.planetEarthYears = 0;
     this.userPlanetAge = 0;
     this.activityLevel = activityLevel;
     this.userLifeExpectancy = 0;
-    this.leftOrSurpassed = 0
+    this.leftOrSurpassed = 0;
   }
   
   calculatePlanetEarthYears() {
@@ -16,18 +15,18 @@ export default class Planet {
     const jupiterYears = 11.86;
     
     if (this.planetName === "Mercury") {
-      this.planetEarthYears = Math.round((365 * mercuryYears));
+      return Math.round((365 * mercuryYears));
     } else if (this.planetName === "Venus") {
-      this.planetEarthYears = Math.round((365 * venusYears));
+      return Math.round((365 * venusYears));
     } else if (this.planetName === "Mars") {
-      this.planetEarthYears = Math.round((365 * marsYears));
+      return Math.round((365 * marsYears));
     } else {
-      this.planetEarthYears = Math.round((365 * jupiterYears));
+      return Math.round((365 * jupiterYears));
     }
   }
 
   calculateUserPlanetAge() {
-    this.userPlanetAge = Math.round((365 * this.earthUserAge)/this.planetEarthYears);
+    this.userPlanetAge = Math.round((365 * this.earthUserAge)/this.calculatePlanetEarthYears());
   }
 
   determineUserLifeExpectancy() {
@@ -41,7 +40,7 @@ export default class Planet {
   }
 
   calculateUserPlanetLifeExpectancy() {
-    this.userPlanetLifeExpectancy = Math.round((365 * this.userLifeExpectancy)/this.planetEarthYears);
+    this.userPlanetLifeExpectancy = Math.round((365 * this.userLifeExpectancy)/this.calculatePlanetEarthYears());
   }
   
   calculateLeftOrSurp() {
@@ -55,6 +54,4 @@ export default class Planet {
       return (`Your age in ${this.planetName} is ${this.userPlanetAge} years. You are already surpassed the average life expectancy in ${this.planetName}, which is ${this.userPlanetLifeExpectancy} years, for about up to ${this.leftOrSurpassed * (-1)} years. Congrats!`) ;
     }
   }
-  
-  
 }
