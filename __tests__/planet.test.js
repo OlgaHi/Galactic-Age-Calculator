@@ -82,7 +82,10 @@ describe('Planet', () => {
     expect(jupiter.userLifeExpectancy).toEqual(82);
   });
 
-  
+  test('should calculate and update property for mercury object', () => {
+    mercury.calculateUserPlanetLifeExpectancy();
+    expect(mercury.userPlanetLifeExpectancy).toEqual(332);
+  });
 
 
 
