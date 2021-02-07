@@ -32,6 +32,8 @@ export default class Planet {
   determineUserLifeExpectancy() {
     if (this.activityLevel === "never") {
       this.userLifeExpectancy = 79;
+    } else if (this.activityLevel === "sometimes") {
+      this.userLifeExpectancy = 80;
     }
   }
   
