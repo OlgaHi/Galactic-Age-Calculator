@@ -78,7 +78,7 @@ describe('Planet', () => {
 
   test('should determine and update property userLifeExpectancy for mars object', () => {
     mars.determineUserLifeExpectancy();
-    expect(mars.userLifeExpectancy).toEqual(80);
+    expect(mars.userLifeExpectancy).toEqual(82);
     
   });
 
