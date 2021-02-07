@@ -8,7 +8,7 @@ describe('Planet', () => {
   let jupiter;
   
   beforeEach(() => {
-    mercury = new Planet("Mercury", 36);
+    mercury = new Planet("Mercury", 36, "never");
     venus = new Planet("Venus", 36);
     mars = new Planet("Mars", 36);
     jupiter = new Planet("Jupiter", 36);
@@ -64,9 +64,9 @@ describe('Planet', () => {
     expect(jupiter.userPlanetAge).toEqual(3);
   });
 
-  test('method should calculate and update property userLifeExpectancy for objects', () => {
-    mercury.calculateUserLifeExpectancy();
-    expect(mercury.userLifeExpectancy).toEqual(80);
+  test('should determine and update property userLifeExpectancy for mercury object', () => {
+    mercury.determineUserLifeExpectancy();
+    expect(mercury.userLifeExpectancy).toEqual(79);
     
   });
 

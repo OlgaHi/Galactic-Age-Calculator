@@ -1,9 +1,10 @@
 export default class Planet {
-  constructor(planetName, earthUserAge) {
+  constructor(planetName, earthUserAge, activityLevel) {
     this.planetName = planetName;
     this.earthUserAge = earthUserAge;
     this.planetEarthYears = 0;
     this.userPlanetAge = 0;
+    this.activityLevel = activityLevel;
     this.userLifeExpectancy = 0;
   }
   
@@ -28,8 +29,9 @@ export default class Planet {
     this.userPlanetAge = Math.round((365 * this.earthUserAge)/this.planetEarthYears);
   }
 
-  calculateUserLifeExpectancy() {
+  determineUserLifeExpectancy() {
     
   }
-
+  
+  
 }
