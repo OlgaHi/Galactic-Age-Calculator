@@ -37,7 +37,14 @@ This application demonstrates:
   cd Galactic-Age-Calculator
 
 - Open in text editor to view code:
-  -  Run the command `npm run install`
+  -  Run the command `npm run install` to install dev dependencies
+
+  - Run the command `npm run test` to run tests
+
+  - Navigate to the folder:
+    /tests
+    /planet.test.js to see tests
+
 
 ## Specifications
 
